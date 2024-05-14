@@ -8,3 +8,13 @@ function getComputerChoice() {
         return 'scissors'
     }
 }
+
+function getHumanChoice() {
+    let choice = prompt('rock / paper / scissors?', '')
+    let choiceFiltered = choice.toLowerCase().trim()
+    while (choiceFiltered !== 'rock' && choiceFiltered !== 'paper' && choiceFiltered !== 'scissors') {
+        choice = prompt('rock / paper / scissors?', '')
+        choiceFiltered = choice.toLowerCase().trim()
+    }   
+    return choiceFiltered
+}
