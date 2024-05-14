@@ -32,22 +32,22 @@ function playGame(rounds) {
         }
         if (humanChoice === 'paper' && computerChoice === 'rock') {
             console.log(`You win! ${humanChoice} beats ${computerChoice}`)
-            humanScore += 1
+            humanScore++
             return
         }
         if (humanChoice === 'rock' && computerChoice === 'scissors') {
             console.log(`You win! ${humanChoice} beats ${computerChoice}`)
-            humanScore += 1
+            humanScore++
             return
         }
         if (humanChoice === 'scissors' && computerChoice === 'paper') {
             console.log(`You win! ${humanChoice} beats ${computerChoice}`)
-            humanScore += 1
+            humanScore++
             return
         }
         else {
             console.log(`You lose! ${computerChoice} beats ${humanChoice}`)
-            computerScore += 1 
+            computerScore++
             return
         }
     }
@@ -71,3 +71,5 @@ function playGame(rounds) {
     }
 
 }
+
+playGame(5)
