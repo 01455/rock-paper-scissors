@@ -1,0 +1,58 @@
+html {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    height:100%;
+}
+
+#gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 250px;
+}
+
+#gameStatusDiv {
+    border: solid 2px #FFF9D0;
+    border-radius: 5px;
+}
+
+.btns {
+    display: flex;
+    gap: 50px
+}
+
+.btn {
+    background-color: #A0DEFF;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+.btn:hover {
+    background-color: #5AB2FF;
+}
+
+.btn:disabled {
+    background-color: #dfdfdf;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 25px;
+    padding: 25px;
+    margin: 0;
+}
+
+ul div {
+    display: flex;
+    gap: 25px;
+}
+
+#roundResult {
+    text-align: center;
+}
